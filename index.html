@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portfolio - Miguela Temmar</title>
+        <!-- MAIN CSS FILE -->
+        <link rel="stylesheet" type="text/css" href="sollicitatie.css">
+
+        <!-- SCROLL DOWN JAVASCRIPT LINK-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- PARALLAX SCROLLING -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- FULL WRAPPER -->
+        <div class="wrapper">
+            
+            <!-- NAVBAR -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- TEXTAREA-->
+            <div class="explanation" >
+                <ul>
+                    <li>
+                        <h4 align="center"><span class="quote">"</span>ik heb de motivatie om te studeren op HBO-niveau.<span class="quote">"</span></h4>
+                    </li>
+                     <li>
+                        <h4 align="center"><span class="quote">"</span>met behulp van hbo hoop ik een passende baan te vinden.<span class="quote">"</span></h4>
+                    </li>
+                    <li>
+                        <h4 align="center"><span class="quote">"</span>ik hoop beter te worden in het vak.<span class="quote">"</span></h4>
+                    </li>
+                    <li>
+                        <h4 align="center"><span class="quote">"</span>mijn horzon wil verbreden.<span class="quote">"</span></h4>
+                    </li>
+                </ul>
+            </div>
+                      
+            <!-- HEADER -->
+            <div class="hero-nav">
+                <div class="hero-nav__inner">
+                    <h1 style="color:white;">Waarom HBO-ICT?</h1>
+                    <div class="hero-nav__button">
+                        <a href="#" class="btn"></a>
+                    </div>
+                </div>
+            </div>       
+
+            <!-- PARALLAX SCROLLING -->
+            <script>
+                var heroShinker = function() {
+                    var hero = $('.hero-nav'),
+                        heroHeight = $('.hero-nav').outerHeight(true);
+                        $(hero).parent().css('padding-top', heroHeight);
+                    $(window).scroll(function() {
+                        var scrollOffset = $(window).scrollTop();
+                        if (scrollOffset < heroHeight) {
+                            $(hero).css('height', (heroHeight - scrollOffset));
+                        }
+                        if (scrollOffset > (heroHeight - 215)) {
+                            hero.addClass('fixme');
+                        } else {
+                            hero.removeClass('fixme');
+                        };
+                    });
+                }
+                heroShinker();
+            </script>
+
+        </div>
+    </body>
+</html>
+
