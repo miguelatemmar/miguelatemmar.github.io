@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+  color: #333;
+  background: #fafafa;
+  line-height: 140%;
+}
+
+.wrapper{
+  max-width:800px; 
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 100px;
+}
+
+/* ------ TEXT DECORATION ------ */
+h3 a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+ 
+
+/* ------ NAVIGATION ------ */
+.navbar{
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex; /* centering */
+  justify-content: center;
+  color: grey;
+  padding: 20px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  padding-right: 5px;
+}
+
+.navbar a {
+
+  color: grey;
+  font-weight: 300;
+  text-decoration: none;
+}
+.navbar a:hover{
+  border-bottom: 2px solid grey;
+}
+
+
+.explanation h4 {
+  color: black;
+  font-size: 1.3em;
+  font-weight:300;
+  text-decoration: none;
+  line-height: 2.5;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+/* ------ HOME  ------ */
+.explanation{
+  height: 100%;
+}
+
+.quote{
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ------ HOME PARALLAX HEADER ------ */
+
+.hero-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* VIEWPORT - COVER FULL SCREEN */
+  min-height: 105px;
+  background-image: url(https://images.unsplash.com/photo-1442606383395-175ee96ed967?q=80&fm=jpg&s=5c8c74be9bc91b47c79a1aaf92264be5);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* ------ DASHBOARD TABLE ------ */
+.dash-container td{
+  vertical-align: top;
+}
+.dash-container th{
+  vertical-align: bottom;
+}
+.dash-container a{
+  text-decoration: none;
+  line-height: 2.0;
+  color: blue;
+}
+.dash-container a:hover{
+  border-bottom: 2px solid blue;
+}
+
+/* ------ PROFILE ANIMATION ------ */
+.code-animation{ 
+  height: 100%;
+  background-color: #27364A;
+  margin:-8px;
+  padding-top: 60px;
+}
+
+.var-highlight{ color: #C0AD60; }
+.blue{ color: lightskyblue; }
+.orange{ color: rgba(253, 149, 90, 0.8); }
+
+#typewriter{
+  font-size: 2em;
+  margin: 0;
+  font-family: "Courier New";
+  color: white;
+  line-height: 1.0;
+
+  &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+  }
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}  
