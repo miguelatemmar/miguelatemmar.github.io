@@ -6,11 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- MAIN CSS FILE -->
-        <link rel="stylesheet" type="text/css" href="sollicitatie.css">
+        <link rel="stylesheet" type="text/css" href="assets/sollicitatie.css">
         
-        <!-- IMAGES CSS FILE-->
-        <link rel="stylesheet" href="assets/style.css">
-
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
         
@@ -28,36 +25,36 @@
             <div class="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="profile.html">Profile</a></li>
+                    <li><a class="active" href="profile.html">Profiel</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="motivation.html">Motivatie</a></li>
                 </ul>
             </div>
             
             <h1>Profile</h1>
 
             <!-- IMAGES -->
-            <!-- <section id="start"> -->
-                
-                <div class="d-flex">
-                    <!-- FIRST IMAGE-->
-                    <div class="image"
-                            style="background: url('IMG(profile).jpg') no-repeat center; background-size: cover; filter: grayscale(100%);"
-                            data-paroller-factor="0.5" data-paroller-factor-md="0.3"
-                            data-paroller-factor-sm="0.2"data-paroller-factor-xs="0.1">
-                    </div>
-                    <!-- SECOND IMAGE -->
-                    <div class="image"
-                            style="background: url('vlagrms.jpg') no-repeat center; background-size: cover;"
-                            data-paroller-factor="-0.1">
-                    </div>
-                    <!-- THIRD IMAGE -->
-                    <div class="image"
-                            style="background: url('piano-playing.gif') repeat center; background-size: cover;"
-                            data-paroller-factor="-0.4">
-                    </div>                    
+            <div class="d-flex">
+                <!-- FIRST IMAGE-->
+                <div class="image"
+                    style="background: url('assets/images/IMG(profile).jpg') 
+                        no-repeat center; background-size: cover; filter: grayscale(100%);"
+                    data-paroller-factor="0.5" data-paroller-factor-md="0.3"
+                    data-paroller-factor-sm="0.2" data-paroller-factor-xs="0.1">
                 </div>
-            <!-- </section> -->
+                <!-- SECOND IMAGE -->
+                <div class="image"
+                    style="background: url('assets/images/vlagrms.jpg') 
+                        no-repeat center; background-size: cover;"
+                    data-paroller-factor="-0.1">
+                </div>
+                <!-- THIRD IMAGE -->
+                <div class="image"
+                    style="background: url('assets/images/piano-playing.gif') 
+                        repeat center; background-size: cover;"
+                    data-paroller-factor="-0.4">
+                </div>                    
+            </div>
 
         <!-- IMAGES JAVASCRIPT -->
         <script>
@@ -67,32 +64,29 @@
                     $('[data-paroller-factor]').paroller();
                     //initialize paroller.js and set options for elements with .paroller class
                     $('.paroller-example').paroller({
-                        factorXs: 0.1,
-                        factorSm: 0.1,
-                        factorMd: -0.4,
-                        factorLg: -0.5,
-                        factorXl: -0.6,
-                        factor: -0.4,
+                        factorXs: 0.1, factorSm: 0.1,
+                        factorMd: -0.4, factorLg: -0.5,
+                        factorXl: -0.6, factor: -0.4,
                         type: 'foreground',
                         direction: 'horizontal'
                     });
                 });
         </script>
     </div> <!-- WRAPPER DIV END HERE -->
-    <section id="start"></section>
+
     <!-- CODE ANIMATION-->
     <div class="code-animation">
         <pre id="typewriter">
             <span class="var-highlight">var</span> <span class="blue">object</span> = {
-                name: <span class="orange">'Miguela Temmar'</span>,
-                pronunciation: <span class="orange">'Mie-gwe-la'</span>,
-                type: <span class="orange">'Female'</span>,
-                age: <span class="orange">'20'</span>,                
-                location: <span class="orange">Netherlands, Oost-Souburg</span>,
-                species: <span class="orange">'Moluccan'</span>,
-                interest: <span class="orange">'Music'</span>,
+                name: <span class="orange">'Miguela Temmar'</span>;
+                type: <span class="orange">'Female'</span>;
+                age: <span class="green">20</span>;                
+                location: <span class="orange">'The Netherlands'</span>;
+                species: <span class="orange">'Moluccan'</span>;
+                interest: <span class="orange">'Music'</span>;
                 past education: [<span class="orange">'MBO ICT Mediadevelopment</span>
-                            <span class="orange">@ Terneuzen</span>];
+                            <span class="orange">@ Terneuzen'</span>];
+                current education: [<span class="orange">'HBO-ICT @ Middelburg'</span>];
             };
         </pre>
     </div>
@@ -109,7 +103,7 @@
             tag = "",
             writingTag = false,
             tagOpen = false,
-            typeSpeed = 10,
+            typeSpeed = 1,
         tempTypeSpeed = 0;
 
         /* Type function */
@@ -162,7 +156,7 @@
             /* automatically scroll to next line */
             $('body').scrollTop(1000)
 
-            /* after animation, stop function & stop strolling */
+            /* after animation, stop function & stop strolling to bottom */
         };
 
         return {
@@ -176,6 +170,6 @@
     /* call function when there's something to type ... */
     typewriter.type();     
     </script>
-    
+
     </body>
 </html>

@@ -1,0 +1,237 @@
+body {
+  font-family: sans-serif;
+  color: #333;
+  background: #fafafa;
+  line-height: 140%;
+}
+.wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 50px;
+}
+
+/* ------ TEXT DECORATION ------ */
+h3 a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+/* main content text style */
+.motivation p, .nbsa p{
+  color: #616161;
+}
+.motivation p, .motivation ol li, .motivation ul li, .nbsa p {
+  font-weight: 300;
+}
+
+/* ------ NAVIGATION ------ */
+.navbar{
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  display: flex; /* centering */
+  justify-content: center;
+  color: grey;
+  padding: 20px 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  display: inline;
+  padding-right: 5px;
+}
+.navbar a {
+  color: grey;
+  font-weight: 300;
+  text-decoration: none;
+}
+.navbar .active, .navbar a:hover{ border-bottom: 2px solid grey; }
+.explanation h4 {
+  color: black;
+  font-size: 1.3em;
+  font-weight:300;
+  text-decoration: none;
+  line-height: 2.5;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* ------ HOME  ------ */
+.explanation{ height: 100%; }
+span.quote{
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Parallax header */
+.hero-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* VIEWPORT - COVER FULL SCREEN */
+  min-height: 105px;
+  background-image: url(https://images.unsplash.com/photo-1442606383395-175ee96ed967?q=80&fm=jpg&s=5c8c74be9bc91b47c79a1aaf92264be5);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* ------ PROFILE ------ */
+/* (3) Images */
+@-ms-viewport{ width:device-width; }
+
+/* size */
+.image{
+  min-height:300px;
+  padding:3em;
+  margin:.5em;
+  min-width:20%;
+  border-radius:0
+}
+.image{ 
+  border-radius:.25em; 
+  border:0; 
+  display:inline-block; 
+  position:relative 
+}
+.image img{ 
+  border-radius:.25em; 
+  display:block;
+}
+.image.left,.image.right{ max-width:40%}
+.image.left img,.image.right img{ width:100% }
+.image.left{ 
+  float:left; 
+  margin:0 1.5em 1em 0; 
+  top:.25em;
+}
+.image.right{ float:right; 
+  margin:0 0 1em 1.5em; 
+  top:.25em;
+}
+.image.fit{
+  display:block; 
+  margin:0 0 2em; 
+  width:100%;
+}
+.image.fit img{ width:100% }
+.image.main{ display:block;
+  margin:0 0 3em; 
+  width:100%;
+}
+.image.main img{ width:100% }
+
+.d-flex{ 
+  -moz-justify-content:center; 
+  -ms-justify-content:center; 
+  -ms-flex-pack:center; 
+  justify-content:center;
+
+  display:-moz-flex; 
+  display:-ms-flex; 
+  display:-ms-flexbox; 
+  display:flex;
+  padding: 0 0 50px;
+}
+
+/* Code writer */
+div.code-animation, video.code-animation{ 
+  padding: 45px 0; 
+}
+.code-animation{ 
+  margin:-8px; 
+  background-color:#27364A; 
+}
+
+.var-highlight{ color: #C0AD60; }
+.blue{ color: lightskyblue; }
+.orange{ color: rgba(253, 149, 90, 0.8); }
+.green{ color: greenyellow; }
+
+#typewriter{
+  font-size: 2em;
+  font-family: "Courier New";
+  color: white;
+  line-height: 1.0;
+
+  &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+  }
+}
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}  
+
+/* ------ DASHBOARD ------ */
+
+/* Studievoortgang table - toetsonderdelen & studiepunten */
+.studiemonitor th{
+  text-align: left;
+  line-height: 1.1;
+  font-size: 0.9em;
+  vertical-align: center;
+  background-color:#129590;
+  color:white;
+  padding: 4px 8px;
+}
+.studiemonitor tr:nth-child(even){ /* arcering */
+  background-color:#f2f2f2;
+}
+.studiemonitor td{
+  padding: 4px 8px;
+  font-size: 0.9em;
+}
+
+/* Studiewijzer table - links */
+.studiewijzer td{
+  vertical-align: top;
+  text-align: center;
+}
+.studiewijzer ul{ 
+  list-style-type: none;
+  padding-left: 0;
+}
+.studiewijzer th{
+  vertical-align: bottom;
+}
+.studiewijzer a, .motivation li a, .nbsa a{
+  text-decoration: none;
+  line-height: 2.4;
+  color: blue;
+}
+.studiewijzer a:hover, .motivation li a, .nbsa a:hover{
+  border-bottom: 2px solid blue;
+}
+
+/* ------ MOTIVATION ------ */
+.motivation img{ padding: 10px; }
+
+hr{
+  margin: 50px;
+  border: 2px solid #f2f2f2;
+}
+hr.sub{
+  margin: 30px 50px;
+  border: 1px solid #F5F5F5;
+}
+.quote-style{
+  font-weight: 500;
+  color: black;
+}

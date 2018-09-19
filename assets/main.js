@@ -11,8 +11,8 @@
             } else {
                 setTimeout(function () {
                     $("html, body")
-                        // .animate({scrollTop: $(document).height()}, 1)
-                        .animate({scrollBottom: $("#start").scrollTop()}, 1);
+                        // .animate({scrollTop: $(document).height()}, 1) //<-- scrolls to top in the beginning
+                        // .animate({scrollBottom: $("#start").scrollTop()}, 1);  with this tag -->  <section id="start"></section>
                     $('body').removeClass('is-loading').addClass('init-paroller');
                 }, 1200);
             }
